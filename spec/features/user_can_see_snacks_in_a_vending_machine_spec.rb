@@ -9,7 +9,6 @@ feature "When a user visits the vending machine index" do
 
     visit machine_path(machine)
 
-    expect(page).to have_content("Sam's Snacks Machine")
     expect(page).to have_content(snack_1.name)
     expect(page).to have_content(snack_2.name)
   end
